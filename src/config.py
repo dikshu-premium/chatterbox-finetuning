@@ -29,7 +29,7 @@ class TrainConfig:
     json_format = False # Set True if the dataset format is json, and False if it's file-based or ljspeech.
     preprocess = True # If you've already done preprocessing once, set it to false.
     
-    is_turbo: bool = False # Set True if you're training Turbo, False if you're training Normal.
+    is_turbo: bool = True # Set True if you're training Turbo, False if you're training Normal.
 
     # --- Vocabulary ---
     # The size of the NEW vocabulary (from tokenizer.json)
