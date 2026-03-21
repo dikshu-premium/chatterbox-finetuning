@@ -38,7 +38,7 @@ class TrainConfig:
     new_vocab_size: int = 52260 if is_turbo else 2454 
 
     # --- Hyperparameters ---
-    batch_size: int = 16         # Adjust based on VRAM (2, 4, 8)
+    batch_size: int = 2         # Adjust based on VRAM (2, 4, 8)
     grad_accum: int = 2        # Effective Batch Size = Batch * Accum
     learning_rate: float = 1e-5 # T3 is sensitive, keep low
     num_epochs: int = 120
